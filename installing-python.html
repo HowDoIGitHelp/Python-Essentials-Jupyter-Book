@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Python Programming Fundamentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Installing Python &#8212; Python Programming Fundamentals</title>
   
   
   
@@ -56,9 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'installing-python';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Jupyter Notebooks" href="jupyter-notebooks.html" />
+    <link rel="prev" title="Python Fundamentals" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -121,8 +124,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -176,8 +177,8 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="installing-python.html">Installing Python</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Installing Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="expressions.html">Expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datatypes.html">Datatypes</a></li>
@@ -255,7 +256,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Finstalling-python.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -267,6 +268,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/installing-python.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -308,7 +357,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -319,11 +370,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>Installing Python</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-python">Anaconda python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-python-to-your-path-variable">Adding python to your PATH variable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-standalone">Python Standalone</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -333,13 +394,75 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="installing-python">
+<h1>Installing Python<a class="headerlink" href="#installing-python" title="Link to this heading">#</a></h1>
+<section id="anaconda-python">
+<h2>Anaconda python<a class="headerlink" href="#anaconda-python" title="Link to this heading">#</a></h2>
+<p>Installing anaconda python comes with with useful resources. The anaconda install comes with python 3, jupyter, conda environment and more:
+You can download anaconda through the <a class="reference external" href="https://www.anaconda.com/download/success">anaconda download page</a>.</p>
+<p>Choose the correct installer for your operating system</p>
+<p><img alt="anaconda_download page.png" src="_images/anaconda_download_page.png" /></p>
+<p>Install the anaconda using the installer. To avoid issues try to choose an installation path that does not contain any spaces. The installer will warn you about this.</p>
+<p>You can just follow the default installation choices from here.</p>
+<p><img alt="anaconda_installation.png" src="_images/anaconda_installation.png" /></p>
+<p>If successfully installed, the installer will install the following tools to your computer:</p>
+<ul class="simple">
+<li><p>Python</p></li>
+<li><p>Anaconda Prompt</p></li>
+<li><p>Anaconda Navigator</p></li>
+<li><p>Jupyter Notebook</p></li>
+<li><p>Jupyter Lab</p></li>
+<li><p>Spyder IDE</p></li>
+</ul>
+<p>To verify your python installation you can run anaconda prompt. It will open the anaconda terminal. From the terminal you can use anaconda’s command line tools.</p>
+<p>Type the command <code class="docutils literal notranslate"><span class="pre">python</span></code> and press enter:</p>
+<p><img alt="python_command.png" src="_images/python_command.png" /></p>
+<p>If everything is good, anaconda prompt should send you to the python interpreter</p>
+<p><img alt="python_interpreter.png" src="_images/python_interpreter.png" /></p>
+<p>You can now use the anaconda terminal to run python scripts</p>
+</section>
+<section id="adding-python-to-your-path-variable">
+<h2>Adding python to your PATH variable<a class="headerlink" href="#adding-python-to-your-path-variable" title="Link to this heading">#</a></h2>
+<p>If you want to use python in your own terminal, you can add the python executable in your PATH variable.
+The way to do this will depend on your operating system.
+Check the guides below for updating the value of PATH:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.computerhope.com/issues/ch000549.htm">Windows</a></p></li>
+<li><p><a class="reference external" href="https://mac.install.guide/terminal/path">Mac/Linux</a></p></li>
+</ul>
+<p>If you’re successful in adding python to yout PATH variable, you should be able to run the <code class="docutils literal notranslate"><span class="pre">python</span></code> command in your terminal of choice</p>
+<blockquote>
+<div><p>If you already have a python installation in your machine, this is not advised.</p>
+<p>For newer version of windows, running the <code class="docutils literal notranslate"><span class="pre">python</span></code> command may redirect you to the Microsoft Store Download Page for python. To change this, find the setting “App execution aliases” and toggle off the option for App Installer-python.exe and App Installer-python3.exe</p>
+</div></blockquote>
+</section>
+<section id="python-standalone">
+<h2>Python Standalone<a class="headerlink" href="#python-standalone" title="Link to this heading">#</a></h2>
+<p>If you do not want to install the anaconda tool stack. You can also opt to install the python by itself.
+You can follow the instructions on <a class="reference external" href="https://www.python.org/downloads/">python’s download page</a></p>
+<p>If you do choose to install python by itself you will also need to manually install jupyter, which will be used in this training course. You can select between jupyter lab and jupyter notebook, or even install it as a plugin in VSCode. You can find installation instructions in the <a class="reference external" href="https://jupyter.org/install">jupyter page</a></p>
+</section>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -351,12 +474,47 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Python Fundamentals</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="jupyter-notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Jupyter Notebooks</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anaconda-python">Anaconda python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-python-to-your-path-variable">Adding python to your PATH variable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-standalone">Python Standalone</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

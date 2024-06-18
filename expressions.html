@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Datatypes" href="datatypes.html" />
-    <link rel="prev" title="Python Fundamentals" href="intro.html" />
+    <link rel="prev" title="Jupyter Notebooks" href="jupyter-notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -178,6 +178,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installing-python.html">Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datatypes.html">Datatypes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="first-program.html">First program</a></li>
@@ -399,10 +401,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="expressions">
 <h1>Expressions<a class="headerlink" href="#expressions" title="Link to this heading">#</a></h1>
-<p>Expressions are the building blocks of programming. It is used to represent values, it can be combined with other expressions to create more expressions.</p>
+<p>Expressions are the building blocks of programming. It is used to represent values. It can also be combined with other expressions to create more expressions.</p>
 <section id="literals">
 <h2>Literals<a class="headerlink" href="#literals" title="Link to this heading">#</a></h2>
-<p>Literals are the simplest forms of expressions. Just like any expression, literals represent some type of value. Literals are values that represent their value in a ‘literal’ sense. See the examples below. The expressions are literals</p>
+<p>Literals are the simplest forms of expressions. Just like any expression, literals represent some type of value. Literals are values that represent their value in a ‘literal’ sense. See the examples below. These expressions are literals</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span>
@@ -439,7 +441,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>You can see why they represent their value in a literal sense. The literal <code class="docutils literal notranslate"><span class="pre">2</span></code> literally represents the integer value 2. The literal <code class="docutils literal notranslate"><span class="pre">this</span></code> represents the word <code class="docutils literal notranslate"><span class="pre">this</span></code>. As seen in the examples above, literals (and expressions in general) can come in the form of numbers, words, truth values, and more. We will learn about the different types of values expressions can be in the next topic <strong>Datatypes</strong>.</p>
+<p>You can see why they represent their value in a <em>literal</em> sense. The literal <code class="docutils literal notranslate"><span class="pre">2</span></code> <em>literally</em> represents the integer value 2. The literal <code class="docutils literal notranslate"><span class="pre">this</span></code> represents the word <code class="docutils literal notranslate"><span class="pre">this</span></code>. As seen in the examples above, literals (and expressions in general) can come in the form of numbers, words, truth values, and more. We will learn about the different types of values expressions can be in the topic <strong>Datatypes</strong>.</p>
 </section>
 <section id="combining-expressions">
 <h2>Combining Expressions<a class="headerlink" href="#combining-expressions" title="Link to this heading">#</a></h2>
@@ -472,7 +474,7 @@ document.write(`
 </div>
 </div>
 <p>When working with multiple operations in one expression, python follows predefined rules of precedence. On operators with the same amount of priority such as <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">-</span></code> in the cell above, python will combine the expressions from left to right. It will evaluate the leftmost expression first. In the case above it evaluates <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">+</span> <span class="pre">1</span></code> into 3 and then evaluates <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">-</span> <span class="pre">4</span></code> into -1.</p>
-<p>In other cases some operators will take priority over other operaors, regardless if it is to the left of right.</p>
+<p>In other cases some operators will take priority over other operators, regardless if it is to the left or to the right.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">2</span> 
@@ -497,7 +499,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>To promote code readability you as a programmer can remove ambiguity by adding parentheses in your expressions. Expressions inside the <strong>innermost</strong> parentheses are prioritized above everything else</p>
+<p>To promote code readability, you as a programmer can remove ambiguity by adding parentheses in your expressions. Expressions inside the <strong>innermost</strong> parentheses are prioritized above everything else</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
@@ -564,7 +566,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>Variables are also expressions, so they can be used in the same way any other expression is used. It can be combined through operations, or it can be evaluated as is.</p>
+<p>Variables are also expressions, so they can be used in the same way any other expressions are used. It can be combined through operations, or it can be evaluated as is.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">size</span>
@@ -649,7 +651,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>One source of confusion when it comes to assignment statements is the misconception that it is the same as the mathematical equality. It’s easy to make this misconception because after all, they have use the same symbol (<code class="docutils literal notranslate"><span class="pre">=</span></code>). When you see an assignment statement, instead of an equal sympbol, imagine an arrow pointing to the left.</p>
+<p>One source of confusion when it comes to assignment statements is the misconception that it is the same as the mathematical equality. It’s easy to make this misconception because after all, they use the same symbol (<code class="docutils literal notranslate"><span class="pre">=</span></code>). When you see an assignment statement, instead of an equal sympbol, imagine an arrow pointing to the left.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">size</span> <span class="o">&lt;-</span> <span class="n">size</span> <span class="o">+</span> <span class="mi">3</span>
 </pre></div>
 </div>
@@ -735,12 +737,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="jupyter-notebooks.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Python Fundamentals</p>
+        <p class="prev-next-title">Jupyter Notebooks</p>
       </div>
     </a>
     <a class="right-next"
