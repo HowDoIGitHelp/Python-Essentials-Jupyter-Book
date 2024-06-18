@@ -34,5 +34,7 @@ Throughout this training course you will be learning python and the tools associ
 
 [scikit-learn](https://scikit-learn.org/stable/) offers a wide library of machine learning models. It allows you to tune, cross validate, and evaluate models
 
+Table of Contents
+
 ```{tableofcontents}
 ```

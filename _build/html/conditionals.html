@@ -178,6 +178,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installing-python.html">Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="expressions.html">Expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datatypes.html">Datatypes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="first-program.html">First program</a></li>
@@ -493,6 +495,68 @@ Most likely, we’d have a variable or a condition instead of a literal.</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Only this
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;High&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Low&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>High
+</pre></div>
+</div>
+</div>
+</div>
+<blockquote>
+<div><p>Using <code class="docutils literal notranslate"><span class="pre">else</span></code> without an <code class="docutils literal notranslate"><span class="pre">if</span></code> is a syntax error.</p>
+</div></blockquote>
+<p>Creating <code class="docutils literal notranslate"><span class="pre">if-else</span></code> blocks, allows us to split the program into two branches. If we are looking for more than two we can compound <code class="docutils literal notranslate"><span class="pre">if-else</span></code> statements inside other <code class="docutils literal notranslate"><span class="pre">if</span></code> or <code class="docutils literal notranslate"><span class="pre">else</span></code> statements.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">24</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;High&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;=</span><span class="mi">60</span> <span class="ow">and</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">40</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Medium&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Low&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Low
+</pre></div>
+</div>
+</div>
+</div>
+<p>In the code above, the program can go in either three branches, if the inputted number is greater than 60, it goes to the first branch and prints “High”, if the inputted number is 60 or lesser but greater than 40, it goes to the 2nd branch. If it is not greater than 60, or if it is not between 40 and 60, it goes to the third branch. The third branch in this case is the <code class="docutils literal notranslate"><span class="pre">else</span></code> branch of the <code class="docutils literal notranslate"><span class="pre">else</span></code> branch.</p>
+<blockquote>
+<div><p>Notice the indentation of the last four lines of code, the last four lines are all inside the <code class="docutils literal notranslate"><span class="pre">else</span></code> block. To indicate this we add one more level of indentation to the every line in the block</p>
+</div></blockquote>
+<p>You can write write three branches neatly using the <code class="docutils literal notranslate"><span class="pre">elif</span></code> block. <code class="docutils literal notranslate"><span class="pre">elif</span></code> is short for <code class="docutils literal notranslate"><span class="pre">else-if</span></code> and it acts like a combination of an <code class="docutils literal notranslate"><span class="pre">else</span></code> block and an <code class="docutils literal notranslate"><span class="pre">if</span></code> block. Using the <code class="docutils literal notranslate"><span class="pre">elif</span></code> block we can write a more readable program equivalent to the previous program.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">45</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;High&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">&lt;=</span><span class="mi">60</span> <span class="ow">and</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">40</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Medium&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Low&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Medium
 </pre></div>
 </div>
 </div>

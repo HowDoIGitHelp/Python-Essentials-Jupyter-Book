@@ -4,6 +4,8 @@
 format: jb-book
 root: intro
 chapters:
+- file: installing-python
+- file: jupyter-notebooks
 - file: expressions
 - file: datatypes
 - file: first-program

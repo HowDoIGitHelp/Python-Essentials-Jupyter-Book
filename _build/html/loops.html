@@ -177,6 +177,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installing-python.html">Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="expressions.html">Expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datatypes.html">Datatypes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="first-program.html">First program</a></li>
@@ -396,7 +398,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="loops">
 <h1>Loops<a class="headerlink" href="#loops" title="Link to this heading">#</a></h1>
-<p>Imperative programs, such as python programs are built by combining code into three ways: chains, branching/selection, and loops/repetition. Chains are pretty simple. We’ve seen a few examples of it. It is simply executing lines of code one after the other. The example below is a chain of three lines of code:</p>
+<p>Imperative programs, such as python programs are built by combining code into three ways: chains, branches/selection, and loops/repetition. Chains are pretty simple. We’ve seen a few examples of it. It is simply executing lines of code one after the other. The example below is a chain of three lines of code:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
@@ -464,25 +466,25 @@ finish
 <li><p><strong>On the second line, python checks if the boolean expression inside the while statement is true. In this case “Is <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">3</span></code>”? Yes it is. Since <code class="docutils literal notranslate"><span class="pre">0</span></code> is less than 5, it proceeds to the indented lines.</strong></p>
 <ul>
 <li><p>It executes the third line, printing the string <code class="docutils literal notranslate"><span class="pre">'again'</span></code>.</p></li>
-<li><p>It executes the fourth line, overwriting the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">i+1</span></code>. Since <code class="docutils literal notranslate"><span class="pre">i</span></code> is zero before this line, the increment, will change the value to <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">0+1</span></code> or simply <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p>It executes the fourth line, overwriting the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">i+1</span></code>. Since <code class="docutils literal notranslate"><span class="pre">i</span></code> is zero before this line, the increment, will change the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">0+1</span></code> or simply <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
 </ul>
 </li>
 <li><p><strong>Instead of proceeding to the fifth line, python goes back to the the while statement, and checks again, “Is <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">3</span></code>? Since <code class="docutils literal notranslate"><span class="pre">1</span></code> (the current value of <code class="docutils literal notranslate"><span class="pre">i</span></code>) is still less than <code class="docutils literal notranslate"><span class="pre">3</span></code>. The check is successful and it proceeds to the indented lines again</strong></p>
 <ul>
 <li><p>It executes the third line, printing the string <code class="docutils literal notranslate"><span class="pre">'again'</span></code>.</p></li>
-<li><p>It executes the fourth line, overwriting the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">i+1</span></code>. Since <code class="docutils literal notranslate"><span class="pre">i</span></code> is 1 before this line, the increment, will change the value to <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">1+1</span></code> or simply <code class="docutils literal notranslate"><span class="pre">2</span></code>.</p></li>
+<li><p>It executes the fourth line, overwriting the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">i+1</span></code>. Since <code class="docutils literal notranslate"><span class="pre">i</span></code> is 1 before this line, the increment, will change the value to <code class="docutils literal notranslate"><span class="pre">i</span></code> of <code class="docutils literal notranslate"><span class="pre">1+1</span></code> or simply <code class="docutils literal notranslate"><span class="pre">2</span></code>.</p></li>
 </ul>
 </li>
 <li><p><strong>python goes back to the the while statement, and checks again, “Is <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">3</span></code>? Since <code class="docutils literal notranslate"><span class="pre">2</span></code> (the current value of <code class="docutils literal notranslate"><span class="pre">i</span></code>) is still less than <code class="docutils literal notranslate"><span class="pre">3</span></code>. The check is successful and it proceeds to the indented lines again</strong></p>
 <ul>
 <li><p>It executes the third line, printing the string <code class="docutils literal notranslate"><span class="pre">'again'</span></code>.</p></li>
-<li><p>It executes the fourth line, overwriting the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">i+1</span></code>. Since <code class="docutils literal notranslate"><span class="pre">i</span></code> is 1 before this line, the increment, will change the value to <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">2+1</span></code> or simply <code class="docutils literal notranslate"><span class="pre">3</span></code>.</p></li>
+<li><p>It executes the fourth line, overwriting the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> to <code class="docutils literal notranslate"><span class="pre">i+1</span></code>. Since <code class="docutils literal notranslate"><span class="pre">i</span></code> is 1 before this line, the increment, will change the value to <code class="docutils literal notranslate"><span class="pre">i</span></code> of <code class="docutils literal notranslate"><span class="pre">2+1</span></code> or simply <code class="docutils literal notranslate"><span class="pre">3</span></code>.</p></li>
 </ul>
 </li>
 <li><p><strong>python goes back to the the while statement, and checks again, “Is <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">3</span></code>? Since <code class="docutils literal notranslate"><span class="pre">3</span></code> (the current value of <code class="docutils literal notranslate"><span class="pre">i</span></code>) is not less than <code class="docutils literal notranslate"><span class="pre">3</span></code>. The check fails. It skips the indented lines and proceeds to the fifth line</strong></p></li>
 <li><p>It executes the fifth line and prints <code class="docutils literal notranslate"><span class="pre">'finish'</span></code></p></li>
 </ul>
-<p>As you can see, the indented lines after the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement is repeated <em>while</em> the boolean expression remains true.</p>
+<p>As you can see, the indented lines after the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement are repeated <em>while</em> the boolean expression remains true.</p>
 <p>Let’s look at some more examples:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -508,7 +510,7 @@ lift off!
 </div>
 </div>
 </div>
-<p>As expected, the indented lines right after the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement is repeated until the boolean expresion <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&gt;=</span> <span class="pre">0</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>. In this case value of <code class="docutils literal notranslate"><span class="pre">i</span></code> starts as 5 and during every repetition, it is reduced/decremented by 1. Until it becomes <code class="docutils literal notranslate"><span class="pre">-1</span></code> which causes the boolean expression inside while to fail (i.e. evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p>
+<p>As expected, the indented lines right after the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement are repeated until the boolean expresion <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&gt;=</span> <span class="pre">0</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>. In this case value of <code class="docutils literal notranslate"><span class="pre">i</span></code> starts as 5 and during every repetition, it is reduced/decremented by 1. Until it becomes <code class="docutils literal notranslate"><span class="pre">-1</span></code> which causes the boolean expression, <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&gt;=</span> <span class="pre">0</span></code> to fail (i.e. evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p>
 <p>In this example we are repeatedly printing the concatenation of <code class="docutils literal notranslate"><span class="pre">str(i)</span></code> (variable <code class="docutils literal notranslate"><span class="pre">i</span></code> coerced as an <code class="docutils literal notranslate"><span class="pre">int</span></code>), and <code class="docutils literal notranslate"><span class="pre">'...'</span></code>. Because of this print statement we are seeing how the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> changes across every repetition.</p>
 </section>
 <section id="lists-and-loops">
@@ -658,7 +660,7 @@ i=3, j=2
 </div>
 </div>
 </div>
-<p>In the example above we simply change the boolean expression inside the inner loop from <code class="docutils literal notranslate"><span class="pre">j</span> <span class="pre">&lt;</span> <span class="pre">3</span></code> to <code class="docutils literal notranslate"><span class="pre">j</span> <span class="pre">&lt;</span> <span class="pre">i</span></code>. With this change, the inner loops number of repetitions become dependent on the value of <code class="docutils literal notranslate"><span class="pre">i</span></code>. In this case <code class="docutils literal notranslate"><span class="pre">i</span></code> is incremented by 1 during every repetition of the outer loop. Because of this the inner loops repetition amount is also incremented by 1.</p>
+<p>In the example above we simply change the boolean expression inside the inner loop from <code class="docutils literal notranslate"><span class="pre">j</span> <span class="pre">&lt;</span> <span class="pre">3</span></code> to <code class="docutils literal notranslate"><span class="pre">j</span> <span class="pre">&lt;</span> <span class="pre">i</span></code>. With this change, the inner loops number of repetitions become dependent on the value of <code class="docutils literal notranslate"><span class="pre">i</span></code>. In this case <code class="docutils literal notranslate"><span class="pre">i</span></code> is incremented by 1 during every repetition of the outer loop. Because of this, the inner loop’s repetition amount is also incremented by 1.</p>
 </section>
 <section id="infinite-loops">
 <h2>Infinite loops<a class="headerlink" href="#infinite-loops" title="Link to this heading">#</a></h2>
@@ -692,7 +694,7 @@ i=3, j=2
 </section>
 <section id="for-loops">
 <h2><code class="docutils literal notranslate"><span class="pre">for</span></code> loops<a class="headerlink" href="#for-loops" title="Link to this heading">#</a></h2>
-<p>Python has special repetition statements that are useful for working with sequence datatypes. These are know as <code class="docutils literal notranslate"><span class="pre">for</span></code> loops</p>
+<p>Python has special repetition statements that are useful for working with sequence datatypes. These are known as <code class="docutils literal notranslate"><span class="pre">for</span></code> loops</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span><span class="s1">&#39;Banana&#39;</span><span class="p">,</span><span class="s1">&#39;Cherry&#39;</span><span class="p">,</span><span class="s1">&#39;Durian&#39;</span><span class="p">]</span>

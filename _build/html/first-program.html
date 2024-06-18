@@ -178,6 +178,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installing-python.html">Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="expressions.html">Expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datatypes.html">Datatypes</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">First program</a></li>
@@ -397,7 +399,7 @@ document.write(`
 <h1>First program<a class="headerlink" href="#first-program" title="Link to this heading">#</a></h1>
 <p>The interpreter is handy for when we want to have Python calculate a few simple expressions, but it can get hard to use when we want to build programs out of it.</p>
 <p>A Python program is simply a file containing Python expressions and instructions, which Python will execute.
-The program can be as simple as one expression, like we’ve seen before:</p>
+The program can be as simple as one print statement:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
@@ -410,7 +412,6 @@ The program can be as simple as one expression, like we’ve seen before:</p>
 </div>
 </div>
 </div>
-<p>Or have multiple lines:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">subject</span> <span class="o">=</span> <span class="s2">&quot;Sam&quot;</span>
@@ -427,6 +428,7 @@ The program can be as simple as one expression, like we’ve seen before:</p>
 </div>
 </div>
 </div>
+<p>The function <code class="docutils literal notranslate"><span class="pre">print()</span></code> allows us to write string expressions in the output. This is commonly called as <em>printing</em>. In the case of jupyter, the string expression will be printed in the output section of the cell. On the case of python programs, the string expression will be be printed in the terminal. To demonstrate this lets create our first python program</p>
 <section id="writing-your-first-program">
 <h2>Writing your first program<a class="headerlink" href="#writing-your-first-program" title="Link to this heading">#</a></h2>
 <p>To start writing our Python program, we’ll have to open up a new file in a text editor.</p>
@@ -440,17 +442,22 @@ We don’t want to accidently mix in <code class="docutils literal notranslate">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p><img alt="python_program.png" src="_images/python_program.png" /></p>
+<blockquote>
+<div><p>For this to run correctly, make sure you run the command at the same directory as <code class="docutils literal notranslate"><span class="pre">hello.py</span></code></p>
+</div></blockquote>
 <p>Save the file with the file extension <code class="docutils literal notranslate"><span class="pre">.py</span></code>.
 The <code class="docutils literal notranslate"><span class="pre">.py</span></code> indicates that the file is a Python program.
 In this case, let’s save it as <code class="docutils literal notranslate"><span class="pre">hello.py</span></code>.</p>
 </section>
 <section id="running-our-program">
 <h2>Running our program<a class="headerlink" href="#running-our-program" title="Link to this heading">#</a></h2>
-<p>To run our program, we’ll use <code class="docutils literal notranslate"><span class="pre">python</span></code> directly via a terminal. Make sure you run the command on the same directory the file <code class="docutils literal notranslate"><span class="pre">hello.py</span></code> is in. If python is installed correctly and if there are no errors in your program, you should see the following output:</p>
+<p>To run our program, we’ll use <code class="docutils literal notranslate"><span class="pre">python</span></code> directly via a terminal (if you installed python through anaconda, you can use the anaconda prompt as your terminal). Make sure you run the command on the same directory the file <code class="docutils literal notranslate"><span class="pre">hello.py</span></code> is in. If python is installed correctly and if there are no errors in your program, you should see the following output:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>hello.py
 Hello<span class="w"> </span>world!
 </pre></div>
 </div>
+<p><img alt="python_program_output.png" src="_images/python_program_output.png" /></p>
 <p>Python will execute the file a line at a time.
 When no more lines are left to execute, the Python program finishes and stops.</p>
 </section>

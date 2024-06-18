@@ -178,6 +178,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="installing-python.html">Installing Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="expressions.html">Expressions</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Datatypes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="first-program.html">First program</a></li>
@@ -1547,21 +1549,7 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Deleting</span> <span class="n">a</span> <span class="n">key</span> <span class="ow">is</span> <span class="n">done</span> <span class="k">with</span> <span class="err">`</span><span class="k">del</span><span class="err">`</span><span class="p">:</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">75</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="n">Deleting</span> <span class="n">a</span> <span class="n">key</span> <span class="ow">is</span> <span class="n">done</span> <span class="k">with</span> <span class="err">`</span><span class="k">del</span><span class="err">`</span><span class="p">:</span>
-             <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
+<p>Deleting a key is done with <code class="docutils literal notranslate"><span class="pre">del</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span>
@@ -1592,6 +1580,9 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 </div>
 </div>
 </div>
+<blockquote>
+<div><p>Now that the entry associated to <code class="docutils literal notranslate"><span class="pre">&quot;date&quot;</span></code> is now delete. Trying to retrieve it through indexing will cause a KeyError</p>
+</div></blockquote>
 </section>
 <section id="type-compatibility">
 <h2>Type compatibility<a class="headerlink" href="#type-compatibility" title="Link to this heading">#</a></h2>
