@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Python Fundamentals &#8212; Python Programming Fundamentals</title>
+    <title>Small Python Programs &#8212; Python Programming Fundamentals</title>
   
   
   
@@ -57,10 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Python Exercises';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installing Python" href="installing-python.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -141,7 +142,7 @@
 
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -172,8 +173,8 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Python Fundamentals
                 </a>
             </li>
@@ -257,7 +258,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPython Exercises.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +288,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Python Exercises.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +372,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Python Fundamentals</h1>
+    <h1>Small Python Programs</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,13 +382,26 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-is-easy">Python is easy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-is-well-supported">Python is well supported</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-tools-for-data-science">Python tools for Data Science</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">pandas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy">numpy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib">matplotlib</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scikit-learn">scikit-learn</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#easy-requires-expressions-and-datatypes">Easy (requires expressions and datatypes)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#greeter">1 Greeter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adder">2 Adder</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#converter">3 Converter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-calculator">4 Mean Calculator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeater">5 Repeater</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-requires-conditionals">Medium (requires conditionals)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1 Greeter+</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2 Adder+</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3 Converter+</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4 Mean Calculator+</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5 Repeater+</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-requires-sequence-types-loops">Advanced (requires Sequence types, Loops)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1 Greeter++</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2 Adder++</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">3 Mean Calculator++</a></li>
 </ul>
 </li>
 </ul>
@@ -401,49 +415,153 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="python-fundamentals">
-<h1>Python Fundamentals<a class="headerlink" href="#python-fundamentals" title="Link to this heading">#</a></h1>
-<p>To kickstart the training program, well start off with one of the most important tools in data science: python.</p>
-<p>Python is used for diverse tasks in the data science pipeline. From data cleaning, data exploration, statistical analysis, visualization, model building, presentation, etc.</p>
-<p>In this section of the training you will learn the basics of python programming.</p>
-<section id="python-is-easy">
-<h2>Python is easy<a class="headerlink" href="#python-is-easy" title="Link to this heading">#</a></h2>
-<p>Python is designed to be close to natural language. It was created to promote readability, maintainability and communication. Instead of dedicating the time to learn difficult syntax, you can easily jump into writing python scripts.</p>
-</section>
-<section id="python-is-well-supported">
-<h2>Python is well supported<a class="headerlink" href="#python-is-well-supported" title="Link to this heading">#</a></h2>
-<p>Python is not only well-loved in data science, it is well-loved across many fields. Because of this python enjoys the support of a strong and passionate community that loves to contribute new libraries and tools.</p>
-</section>
-<section id="python-tools-for-data-science">
-<h2>Python tools for Data Science<a class="headerlink" href="#python-tools-for-data-science" title="Link to this heading">#</a></h2>
-<p>Throughout this training course you will be learning python and the tools associated to python for data science.</p>
-<section id="pandas">
-<h3>pandas<a class="headerlink" href="#pandas" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://pandas.pydata.org/">pandas</a> is used for all data cleaning, data exploration, data analysis. With pandas you’re able to structure data in an intuitive way, you’re able to manipulate data easily, and seamlessly</p>
-</section>
-<section id="numpy">
-<h3>numpy<a class="headerlink" href="#numpy" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://numpy.org/">numpy</a> is the heart of almost every involving vectorized operations in python. You will use numpy when you’re interacting with numerical data,</p>
-</section>
-<section id="matplotlib">
-<h3>matplotlib<a class="headerlink" href="#matplotlib" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://matplotlib.org/">matplotlib</a> is used for creating rich customizable visualizatio. You will matplotlib to explore data, evaluate models, and present results</p>
-</section>
-<section id="scikit-learn">
-<h3>scikit-learn<a class="headerlink" href="#scikit-learn" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn</a> offers a wide library of machine learning models. It allows you to tune, cross validate, and evaluate models</p>
-<p>Table of Contents</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installing-python.html">Installing Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="expressions.html">Expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datatypes.html">Datatypes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="first-program.html">First program</a></li>
-<li class="toctree-l1"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="loops.html">Loops</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="small-python-programs">
+<h1>Small Python Programs<a class="headerlink" href="#small-python-programs" title="Link to this heading">#</a></h1>
+<section id="easy-requires-expressions-and-datatypes">
+<h2>Easy (requires expressions and datatypes)<a class="headerlink" href="#easy-requires-expressions-and-datatypes" title="Link to this heading">#</a></h2>
+<section id="greeter">
+<h3>1 Greeter<a class="headerlink" href="#greeter" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for a name, and the program prints “Hello, <name>”</p></li>
 </ul>
-</div>
+</section>
+<section id="adder">
+<h3>2 Adder<a class="headerlink" href="#adder" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for two integers (you will have to call <code class="docutils literal notranslate"><span class="pre">input()</span></code> twice). The program prints the sum of the values</p></li>
+</ul>
+</section>
+<section id="converter">
+<h3>3 Converter<a class="headerlink" href="#converter" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for a float. The program prints the conversion of the number to Fahrenheit</p></li>
+</ul>
+</section>
+<section id="mean-calculator">
+<h3>4 Mean Calculator<a class="headerlink" href="#mean-calculator" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for three floats. The program prints the arithmetic mean of the numbers</p></li>
+</ul>
+</section>
+<section id="repeater">
+<h3>5 Repeater<a class="headerlink" href="#repeater" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks a user for a string and an integer. The program prints the string repeated n-times (where <span class="math notranslate nohighlight">\(n\)</span> is the number inputted by the user).</p></li>
+<li><p>Example:</p>
+<ul>
+<li><p><strong>inputs:</strong> <code class="docutils literal notranslate"><span class="pre">ha</span></code>, <code class="docutils literal notranslate"><span class="pre">5</span></code></p></li>
+<li><p><strong>output</strong>: <code class="docutils literal notranslate"><span class="pre">hahahahaha</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="medium-requires-conditionals">
+<h2>Medium (requires conditionals)<a class="headerlink" href="#medium-requires-conditionals" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>1 Greeter+<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for a name.</p>
+<ul>
+<li><p>If the number of characters in the name of the person is less than 7, the program prints “Hello <name>”.</p></li>
+<li><p>Otherwise it prints “Hi <name>”</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h3>2 Adder+<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for two integers (you will have to call <code class="docutils literal notranslate"><span class="pre">input()</span></code> twice).</p>
+<ul>
+<li><p>If the value of their sum is zero, the program prints the string “Zero”.</p></li>
+<li><p>Otherwise it prints the sum in integer form.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id3">
+<h3>3 Converter+<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for a float. The program prints the conversion of the number to Fahrenheit.</p>
+<ul>
+<li><p>If the value is below the freezing point of water, the program prints “<fahrenheit> degrees Fahrenheit cold”.</p></li>
+<li><p>If the value is above the boiling point of water, the program prints “<fahrenheit> degrees Fahrenheit hot”</p></li>
+<li><p>Otherwise the program prints “<fahrenheit> degrees Fahrenheit”</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id4">
+<h3>4 Mean Calculator+<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for three floats.</p>
+<ul>
+<li><p>If the mean is positive, print “Negative mean”</p></li>
+<li><p>If the mean is negative, print “Positive mean”</p></li>
+<li><p>If the mean is zero, print “Zero mean”</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id5">
+<h3>5 Repeater+<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks a user for a string and an integer. The program prints the string repeated <span class="math notranslate nohighlight">\(n\)</span>-times (where <span class="math notranslate nohighlight">\(n\)</span> is the number inputted by the user).</p>
+<ul>
+<li><p>If the number of characters in the repeated string is greater than 20, the prints “Too long, cannot print” instead</p></li>
+</ul>
+</li>
+<li><p>Example 1:</p>
+<ul>
+<li><p><strong>inputs:</strong> <code class="docutils literal notranslate"><span class="pre">ha</span></code>, <code class="docutils literal notranslate"><span class="pre">5</span></code></p></li>
+<li><p><strong>output</strong>: <code class="docutils literal notranslate"><span class="pre">hahahahaha</span></code></p></li>
+</ul>
+</li>
+<li><p>Example 2:</p>
+<ul>
+<li><p><strong>inputs</strong>: <code class="docutils literal notranslate"><span class="pre">ha</span></code>, <code class="docutils literal notranslate"><span class="pre">12</span></code></p></li>
+<li><p><strong>output</strong>: <code class="docutils literal notranslate"><span class="pre">Too</span> <span class="pre">long,</span> <span class="pre">cannot</span> <span class="pre">print</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="advanced-requires-sequence-types-loops">
+<h2>Advanced (requires Sequence types, Loops)<a class="headerlink" href="#advanced-requires-sequence-types-loops" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h3>1 Greeter++<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for <span class="math notranslate nohighlight">\(n\)</span> names. After collecting <span class="math notranslate nohighlight">\(n\)</span> names, print the following for every inputted name:</p>
+<ul>
+<li><p>If the number of characters in the name of the person is less than 7, the program prints “Hello <name>”.</p></li>
+<li><p>Otherwise it prints “Hi <name>”</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id7">
+<h3>2 Adder++<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user <span class="math notranslate nohighlight">\(n\)</span> integers.</p>
+<ul>
+<li><p>If the value of their sum is zero, the program prints the string “Zero”.</p></li>
+<li><p>Otherwise it prints the sum in integer form.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id8">
+<h3>3 Mean Calculator++<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create a program that asks the user for <span class="math notranslate nohighlight">\(n\)</span> floats.</p>
+<ul>
+<li><p>If the mean is positive, print “Negative mean”</p></li>
+<li><p>If the mean is negative, print “Positive mean”</p></li>
+<li><p>If the mean is zero, print “Zero mean”</p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 </section>
@@ -478,15 +596,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="installing-python.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Installing Python</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -503,13 +612,26 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-is-easy">Python is easy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-is-well-supported">Python is well supported</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-tools-for-data-science">Python tools for Data Science</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">pandas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy">numpy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib">matplotlib</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scikit-learn">scikit-learn</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#easy-requires-expressions-and-datatypes">Easy (requires expressions and datatypes)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#greeter">1 Greeter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adder">2 Adder</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#converter">3 Converter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-calculator">4 Mean Calculator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeater">5 Repeater</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-requires-conditionals">Medium (requires conditionals)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1 Greeter+</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2 Adder+</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3 Converter+</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4 Mean Calculator+</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5 Repeater+</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-requires-sequence-types-loops">Advanced (requires Sequence types, Loops)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1 Greeter++</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2 Adder++</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">3 Mean Calculator++</a></li>
 </ul>
 </li>
 </ul>
