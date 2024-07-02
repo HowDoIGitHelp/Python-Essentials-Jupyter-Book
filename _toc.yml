@@ -11,3 +11,4 @@ chapters:
 - file: first-program
 - file: conditionals
 - file: loops
+- file: functions
