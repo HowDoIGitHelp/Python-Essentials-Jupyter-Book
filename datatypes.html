@@ -185,6 +185,7 @@
 <li class="toctree-l1"><a class="reference internal" href="first-program.html">First program</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions</a></li>
 </ul>
 
     </div>
@@ -545,6 +546,18 @@ These are numbers that have a fractional part.</p>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">1.0</span> <span class="o">//</span> <span class="mf">2.0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.0
+</pre></div>
+</div>
+</div>
+</div>
 <p>The <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">3</span></code>, is implicitly converted to a <code class="docutils literal notranslate"><span class="pre">float</span></code> and then added with the other <code class="docutils literal notranslate"><span class="pre">float</span></code>.
 Thus, we get a <code class="docutils literal notranslate"><span class="pre">5.0</span></code> as we’re adding two <code class="docutils literal notranslate"><span class="pre">float</span></code>s.</p>
 </section>
@@ -568,7 +581,7 @@ Strings are immutable sequences of characters.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;Hello&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Hello&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -580,12 +593,12 @@ Strings are immutable sequences of characters.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;Sam says, &quot;jump!&quot;&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;Sam says,</span><span class="se">\n</span><span class="s1"> &quot;jump!&quot;&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Sam says, &quot;jump!&quot;&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Sam says,\n &quot;jump!&quot;&#39;
 </pre></div>
 </div>
 </div>
@@ -714,12 +727,12 @@ This is done through the operation concatenation (<code class="docutils literal 
 This multiplies strings to repeat them:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Hello&quot;</span><span class="o">*</span><span class="mi">3</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Hello&quot;</span><span class="o">*</span><span class="mi">5</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;HelloHelloHello&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;HelloHelloHelloHelloHello&#39;
 </pre></div>
 </div>
 </div>
@@ -939,12 +952,12 @@ This multiplies strings to repeat them:</p>
 List literals are created with square brackets, <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="kc">True</span><span class="p">,</span><span class="s1">&#39;five&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span><span class="kc">True</span><span class="p">,</span><span class="s1">&#39;five&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, True, &#39;five&#39;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 1, 6, True, &#39;five&#39;]
 </pre></div>
 </div>
 </div>
@@ -1199,12 +1212,7 @@ List literals are created with square brackets, <code class="docutils literal no
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">items1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span><span class="s1">&#39;Banana&#39;</span><span class="p">,</span><span class="s1">&#39;Cherry&#39;</span><span class="p">]</span>
 <span class="n">items2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Durian&#39;</span><span class="p">]</span>
-<span class="n">items1</span> <span class="o">+</span> <span class="n">items2</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Apple&#39;, &#39;Banana&#39;, &#39;Cherry&#39;, &#39;Durian&#39;]
+<span class="n">longerList</span> <span class="o">=</span> <span class="n">items1</span> <span class="o">+</span> <span class="n">items2</span>
 </pre></div>
 </div>
 </div>
@@ -1234,6 +1242,18 @@ List literals are created with square brackets, <code class="docutils literal no
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">longerList</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Apple&#39;, &#39;Banana&#39;, &#39;Cherry&#39;, &#39;Durian&#39;]
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="tuples">
@@ -1242,7 +1262,7 @@ List literals are created with square brackets, <code class="docutils literal no
 <p>We can create a tuple by separating values with a <code class="docutils literal notranslate"><span class="pre">,</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1306,7 +1326,7 @@ List literals are created with square brackets, <code class="docutils literal no
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">57</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">59</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">coords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">4.0</span><span class="p">)</span>
 
 <span class="ne">AttributeError</span>: &#39;tuple&#39; object has no attribute &#39;append&#39;
@@ -1323,7 +1343,7 @@ List literals are created with square brackets, <code class="docutils literal no
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">59</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">72</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">del</span> <span class="n">coords</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="ne">TypeError</span>: &#39;tuple&#39; object doesn&#39;t support item deletion
@@ -1340,7 +1360,7 @@ List literals are created with square brackets, <code class="docutils literal no
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">60</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">73</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">coords</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mf">2.1</span><span class="p">)</span>
 
 <span class="ne">AttributeError</span>: &#39;tuple&#39; object has no attribute &#39;remove&#39;
@@ -1357,7 +1377,7 @@ List literals are created with square brackets, <code class="docutils literal no
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">61</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">74</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">coords</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
 
 <span class="ne">AttributeError</span>: &#39;tuple&#39; object has no attribute &#39;insert&#39;
@@ -1404,11 +1424,6 @@ List literals are created with square brackets, <code class="docutils literal no
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(2.1, 0.3, -5.0)
-</pre></div>
-</div>
-</div>
 </div>
 <p>The above statement packs the 3 values together down into a tuple and then assigns it to <code class="docutils literal notranslate"><span class="pre">coords</span></code>.</p>
 <p>The reverse is also possible, called <em>sequence unpacking</em>.</p>
@@ -1440,13 +1455,31 @@ List literals are created with square brackets, <code class="docutils literal no
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">coords</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(3.1, 1.2)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span> <span class="o">=</span> <span class="n">coords</span>
 <span class="n">a</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.1
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">79</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span> <span class="o">=</span> <span class="n">coords</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">a</span>
+
+<span class="ne">ValueError</span>: not enough values to unpack (expected 3, got 2)
 </pre></div>
 </div>
 </div>
@@ -1473,22 +1506,17 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;one&#39;: 1, &#39;two&#39;: 2, &#39;three&#39;: 3, &#39;four&#39;: 4}
-</pre></div>
-</div>
-</div>
 </div>
 <p>In the dictionary above, we use the string expression <code class="docutils literal notranslate"><span class="pre">&quot;one&quot;</span></code> as the key for the value <code class="docutils literal notranslate"><span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;two&quot;</span></code> as the key for the value <code class="docutils literal notranslate"><span class="pre">2</span></code>, and so on. Similar to lists, tuples, and strings, we can retrieve values by indexing using the keys</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Fish&quot;</span><span class="p">,</span> <span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">412.25</span><span class="p">}</span>
-<span class="n">data</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span>
+<span class="n">data</span><span class="p">[</span><span class="s2">&quot;quantity&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Fish&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -1553,11 +1581,6 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>450.0
-</pre></div>
-</div>
-</div>
 </div>
 <p>Deleting a key is done with <code class="docutils literal notranslate"><span class="pre">del</span></code>:</p>
 <div class="cell docutils container">
@@ -1582,7 +1605,7 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">77</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">89</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span>
 
 <span class="ne">KeyError</span>: &#39;date&#39;
@@ -1603,20 +1626,10 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">2.0</span> <span class="o">+</span> <span class="mf">1.1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.1
 </pre></div>
 </div>
 </div>
@@ -1627,26 +1640,11 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.2
-</pre></div>
-</div>
-</div>
 </div>
 <p>Some operation-operand combinations are not compatible, an example of this is discussed earlier, strings and (<code class="docutils literal notranslate"><span class="pre">-</span></code>)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abc&#39;</span> <span class="o">-</span> <span class="s1">&#39;a&#39;</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">81</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="s1">&#39;abc&#39;</span> <span class="o">-</span> <span class="s1">&#39;a&#39;</span>
-
-<span class="ne">TypeError</span>: unsupported operand type(s) for -: &#39;str&#39; and &#39;str&#39;
 </pre></div>
 </div>
 </div>
@@ -1659,26 +1657,11 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">82</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="s1">&#39;123&#39;</span> <span class="o">+</span> <span class="mi">4</span>
-
-<span class="ne">TypeError</span>: can only concatenate str (not &quot;int&quot;) to str
-</pre></div>
-</div>
-</div>
 </div>
 <p>In cases like this if you concatenate the two expression, you must expliciltly apply the necessary coercions</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;123&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;1234&#39;
 </pre></div>
 </div>
 </div>
@@ -1690,21 +1673,11 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>127
-</pre></div>
-</div>
-</div>
 </div>
 <p>In some cases, you migh expect types to be incompatible but in fact they actually are</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="o">+</span> <span class="kc">True</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
 </pre></div>
 </div>
 </div>
@@ -1715,11 +1688,6 @@ Each key-value entry of the dictionary is separated by a <code class="docutils l
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kc">True</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="kc">False</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>

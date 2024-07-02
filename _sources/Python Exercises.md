@@ -1,5 +1,13 @@
 # Small Python Programs
 
+Create separate `.py` files for each item below. The filename should be the name of the python program (e.g. greeter.py, adder.py, greeterplus.py)
+
+To test your programs, run each file using the `python` command in the terminal (or anaconda prompt). For example:
+
+```shell
+python greeter.py
+```
+
 ## Easy (requires expressions and datatypes)
 
 ### 1 Greeter

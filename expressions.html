@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -185,6 +185,7 @@
 <li class="toctree-l1"><a class="reference internal" href="first-program.html">First program</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions</a></li>
 </ul>
 
     </div>
@@ -407,19 +408,19 @@ document.write(`
 <p>Literals are the simplest forms of expressions. Just like any expression, literals represent some type of value. Literals are values that represent their value in a ‘literal’ sense. See the examples below. These expressions are literals</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;this&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;this&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -431,12 +432,12 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -448,12 +449,12 @@ document.write(`
 <p>Expression in python and programming are patterned after mathematical expressions. In the same way you can combine mathematical expressions, you can also combine programming expressions based on predefined rules. For example we can combine two integer literal expressions using addition and we will get a compound expression</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1
 </pre></div>
 </div>
 </div>
@@ -676,7 +677,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">size</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">size</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="n">size</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># size = size + 1</span>
 <span class="n">size</span>
 </pre></div>
 </div>

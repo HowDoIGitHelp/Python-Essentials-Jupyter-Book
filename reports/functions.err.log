@@ -18,14 +18,37 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-coords.append(4.0)
+def isolatedFunction(x):
+    y = 2
+    z = 5
+    print('Local values:')
+    print(x)
+    print(y)
+    print(z)
+
+isolatedFunction(3)
+print('Global values:')
+print(x)
+print(y)
+print(z)
 ------------------
 
+----- stdout -----
+Local values:
+3
+2
+5
+Global values:
+------------------
 
 [1;31m---------------------------------------------------------------------------[0m
-[1;31mAttributeError[0m                            Traceback (most recent call last)
-Cell [1;32mIn[59], line 1[0m
-[1;32m----> 1[0m [43mcoords[49m[38;5;241;43m.[39;49m[43mappend[49m([38;5;241m4.0[39m)
+[1;31mNameError[0m                                 Traceback (most recent call last)
+Cell [1;32mIn[11], line 11[0m
+[0;32m      9[0m isolatedFunction([38;5;241m3[39m)
+[0;32m     10[0m [38;5;28mprint[39m([38;5;124m'[39m[38;5;124mGlobal values:[39m[38;5;124m'[39m)
+[1;32m---> 11[0m [38;5;28mprint[39m([43mx[49m)
+[0;32m     12[0m [38;5;28mprint[39m(y)
+[0;32m     13[0m [38;5;28mprint[39m(z)
 
-[1;31mAttributeError[0m: 'tuple' object has no attribute 'append'
+[1;31mNameError[0m: name 'x' is not defined
 
