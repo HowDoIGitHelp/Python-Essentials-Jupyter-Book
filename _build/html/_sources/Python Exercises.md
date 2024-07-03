@@ -12,7 +12,7 @@ python greeter.py
 
 ### 1 Greeter
 
-- Create a program that asks the user for a name, and the program prints "Hello, <name>"
+- Create a program that asks the user for a name, and the program prints "Hello, {name}"
 
 ### 2 Adder
 
@@ -38,8 +38,8 @@ python greeter.py
 ### 1 Greeter+
 
 - Create a program that asks the user for a name. 
-  - If the number of characters in the name of the person is less than 7, the program prints "Hello <name>". 
-  - Otherwise it prints "Hi <name>"
+  - If the number of characters in the name of the person is less than 7, the program prints "Hello, {name}". 
+  - Otherwise it prints "Hi, {name}"
 
 ### 2 Adder+
 
@@ -50,15 +50,15 @@ python greeter.py
 ### 3 Converter+
 
 - Create a program that asks the user for a float. The program prints the conversion of the number to Fahrenheit. 
-  - If the value is below the freezing point of water, the program prints "<fahrenheit> degrees Fahrenheit cold".
-  - If the value is above the boiling point of water, the program prints "<fahrenheit> degrees Fahrenheit hot"
-  - Otherwise the program prints "<fahrenheit> degrees Fahrenheit"
+  - If the value is below the freezing point of water, the program prints "{fahrenheit} degrees Fahrenheit cold".
+  - If the value is above the boiling point of water, the program prints "{fahrenheit} degrees Fahrenheit hot"
+  - Otherwise the program prints "{fahrenheit} degrees Fahrenheit"
 
 ### 4 Mean Calculator+
 
 - Create a program that asks the user for three floats.
-  - If the mean is positive, print "Negative mean" 
-  - If the mean is negative, print "Positive mean"
+  - If the mean is negative, print "Negative mean" 
+  - If the mean is positive, print "Positive mean"
   - If the mean is zero, print "Zero mean"
 
 ### 5 Repeater+
@@ -77,8 +77,8 @@ python greeter.py
 ### 1 Greeter++
 
 - Create a program that asks the user for $n$ names. After collecting $n$ names, print the following for every inputted name:
-  - If the number of characters in the name of the person is less than 7, the program prints "Hello <name>". 
-  - Otherwise it prints "Hi <name>"
+  - If the number of characters in the name of the person is less than 7, the program prints "Hello, {name}". 
+  - Otherwise it prints "Hi, {name}"
 
 ### 2 Adder++
 
@@ -89,6 +89,6 @@ python greeter.py
 ### 3 Mean Calculator++
 
 - Create a program that asks the user for $n$ floats. 
-  - If the mean is positive, print "Negative mean" 
-  - If the mean is negative, print "Positive mean"
+  - If the mean is negative, print "Negative mean" 
+  - If the mean is positive, print "Positive mean"
   - If the mean is zero, print "Zero mean"

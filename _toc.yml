@@ -12,3 +12,4 @@ chapters:
 - file: conditionals
 - file: loops
 - file: functions
+- file: sequences
