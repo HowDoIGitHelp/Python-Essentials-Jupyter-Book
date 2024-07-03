@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -185,6 +185,7 @@
 <li class="toctree-l1"><a class="reference internal" href="first-program.html">First program</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Conditionals</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions</a></li>
 </ul>
 
     </div>
@@ -239,7 +240,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/HowDoIGitHelp/Python-Fundamentals" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -256,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fconditionals.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/HowDoIGitHelp/Python-Fundamentals/issues/new?title=Issue%20on%20page%20%2Fconditionals.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -406,15 +407,22 @@ This allows a flowchart to be more useful and be applicable to a variety of scen
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hey, it&#39;s true!&quot;</span><span class="p">)</span>
-
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hey, it&#39;s true!&quot;</span><span class="p">)</span> <span class="c1">#yes</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;more statements&#39;</span><span class="p">)</span> <span class="c1">#yes</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;outside&#39;</span><span class="p">)</span> <span class="c1">#yes</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;inside or outside&#39;</span><span class="p">)</span> <span class="c1">#?</span>
 <span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is false, it won&#39;t print.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is false, it won&#39;t print.&quot;</span><span class="p">)</span> <span class="c1">#no</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;outside2&#39;</span><span class="p">)</span><span class="c1">#yes</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hey, it&#39;s true!
+more statements
+outside
+inside or outside
+outside2
 </pre></div>
 </div>
 </div>
@@ -439,13 +447,13 @@ It determines whether the code falls under the <code class="docutils literal not
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is printing&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is printing&quot;</span><span class="p">)</span> <span class="c1">#yes</span>
     <span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;But not this&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;But not this&quot;</span><span class="p">)</span> <span class="c1">#no</span>
 <span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;None of this either&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;None of this either&quot;</span><span class="p">)</span> <span class="c1">#no</span>
     <span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nor this&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nor this&quot;</span><span class="p">)</span> <span class="c1">#no</span>
 </pre></div>
 </div>
 </div>
@@ -501,7 +509,7 @@ Most likely, we’d have a variable or a condition instead of a literal.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">90</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;High&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -510,7 +518,25 @@ Most likely, we’d have a variable or a condition instead of a literal.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>High
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;High&quot;</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\ipykernel\kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1279</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1280</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1281</span>     <span class="k">raise</span> <span class="n">StdinNotImplementedError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1282</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_input_request</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1283</span>     <span class="nb">str</span><span class="p">(</span><span class="n">prompt</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1284</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_parent_ident</span><span class="p">[</span><span class="s2">&quot;shell&quot;</span><span class="p">],</span>
+<span class="g g-Whitespace">   </span><span class="mi">1285</span>     <span class="bp">self</span><span class="o">.</span><span class="n">get_parent</span><span class="p">(</span><span class="s2">&quot;shell&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1286</span>     <span class="n">password</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1287</span> <span class="p">)</span>
+
+<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
 </pre></div>
 </div>
 </div>
@@ -521,7 +547,7 @@ Most likely, we’d have a variable or a condition instead of a literal.</p>
 <p>Creating <code class="docutils literal notranslate"><span class="pre">if-else</span></code> blocks, allows us to split the program into two branches. If we are looking for more than two we can compound <code class="docutils literal notranslate"><span class="pre">if-else</span></code> statements inside other <code class="docutils literal notranslate"><span class="pre">if</span></code> or <code class="docutils literal notranslate"><span class="pre">else</span></code> statements.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">24</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;High&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -545,18 +571,20 @@ Most likely, we’d have a variable or a condition instead of a literal.</p>
 <p>You can write write three branches neatly using the <code class="docutils literal notranslate"><span class="pre">elif</span></code> block. <code class="docutils literal notranslate"><span class="pre">elif</span></code> is short for <code class="docutils literal notranslate"><span class="pre">else-if</span></code> and it acts like a combination of an <code class="docutils literal notranslate"><span class="pre">else</span></code> block and an <code class="docutils literal notranslate"><span class="pre">if</span></code> block. Using the <code class="docutils literal notranslate"><span class="pre">elif</span></code> block we can write a more readable program equivalent to the previous program.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">45</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;High&quot;</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">num</span> <span class="o">&lt;=</span><span class="mi">60</span> <span class="ow">and</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">40</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Medium&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="mi">40</span> <span class="ow">and</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Medium Low&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Low&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Medium
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Medium Low
 </pre></div>
 </div>
 </div>

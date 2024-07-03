@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'loops';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Functions" href="functions.html" />
     <link rel="prev" title="Conditionals" href="conditionals.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -184,6 +185,7 @@
 <li class="toctree-l1"><a class="reference internal" href="first-program.html">First program</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conditionals.html">Conditionals</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions</a></li>
 </ul>
 
     </div>
@@ -238,7 +240,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/HowDoIGitHelp/Python-Fundamentals" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -255,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Floops.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/HowDoIGitHelp/Python-Fundamentals/issues/new?title=Issue%20on%20page%20%2Floops.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -436,7 +438,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;again&#39;</span><span class="p">)</span>
     <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;finish&#39;</span><span class="p">)</span>
@@ -445,6 +447,8 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>again
+again
+again
 again
 again
 finish
@@ -517,7 +521,7 @@ lift off!
 <h2>Lists and loops<a class="headerlink" href="#lists-and-loops" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span><span class="s1">&#39;Banana&#39;</span><span class="p">,</span><span class="s1">&#39;Cherry&#39;</span><span class="p">,</span><span class="s1">&#39;Durian&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span><span class="s1">&#39;Banana&#39;</span><span class="p">,</span><span class="s1">&#39;Cherry&#39;</span><span class="p">,</span><span class="s1">&#39;Durian&#39;</span><span class="p">,</span><span class="s1">&#39;Eggplant&#39;</span><span class="p">,</span><span class="s1">&#39;Fig&#39;</span><span class="p">]</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">string_of_fruits</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">):</span>
@@ -529,7 +533,7 @@ lift off!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Here are the items: Apple, Banana, Cherry, Durian, 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Here are the items: Apple, Banana, Cherry, Durian, Eggplant, Fig, 
 </pre></div>
 </div>
 </div>
@@ -601,7 +605,7 @@ It checks if the element at position <code class="docutils literal notranslate">
     <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;i=&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="s1">&#39;j=&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">))</span>
         <span class="n">j</span> <span class="o">=</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">()</span> <span class="c1"># prints an empty line</span>
+    <span class="nb">print</span><span class="p">()</span>
     <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
 </div>
@@ -637,8 +641,8 @@ i=3, j=2
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">:</span> <span class="c1"># instead of looping a set amount of times, it loops based on the value of i</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;i=&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="s1">&#39;j=&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">))</span>
         <span class="n">j</span> <span class="o">=</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span>
@@ -650,17 +654,22 @@ i=3, j=2
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>i=1, j=0
 
-i=2, j=0
 i=2, j=1
 
-i=3, j=0
-i=3, j=1
 i=3, j=2
 </pre></div>
 </div>
 </div>
 </div>
 <p>In the example above we simply change the boolean expression inside the inner loop from <code class="docutils literal notranslate"><span class="pre">j</span> <span class="pre">&lt;</span> <span class="pre">3</span></code> to <code class="docutils literal notranslate"><span class="pre">j</span> <span class="pre">&lt;</span> <span class="pre">i</span></code>. With this change, the inner loops number of repetitions become dependent on the value of <code class="docutils literal notranslate"><span class="pre">i</span></code>. In this case <code class="docutils literal notranslate"><span class="pre">i</span></code> is incremented by 1 during every repetition of the outer loop. Because of this, the inner loop’s repetition amount is also incremented by 1.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;again&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="infinite-loops">
 <h2>Infinite loops<a class="headerlink" href="#infinite-loops" title="Link to this heading">#</a></h2>
@@ -832,6 +841,15 @@ c 3
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Conditionals</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="functions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Functions</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
