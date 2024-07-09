@@ -12,3 +12,6 @@ chapters:
 - file: conditionals
 - file: loops
 - file: functions
+- file: sequences
+- file: OOP
+- file: imports
